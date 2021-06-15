@@ -1,0 +1,41 @@
+.filterButtons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    grid-gap: 2em;
+}
+
+.filterButtons > div {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F4F4F4;
+    color: #2F376B;
+    padding: 0 .5em;
+    transition: .3s;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.filterButtons > div:hover {
+    background-color: #2F376B;
+    color: white;
+}
+
+.filterButtons p {
+    margin: .5em 0;
+}
+
+.filterButtons p:last-child {
+    color: black;
+}
+
+.filterButtons > div:hover p:last-child {
+    color: white;
+}
+
+.filterButtons p:last-child:before {
+    content: '(';
+}
+
+.filterButtons p:last-child:after {
+    content: ')';
+}

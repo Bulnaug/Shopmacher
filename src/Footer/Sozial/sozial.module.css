@@ -1,0 +1,69 @@
+.sozial_bar {
+    background-color: #262626;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.sozial_bar > * {
+    margin: 0 .5em;
+}
+
+.sozial_bar p {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.sozial_bar svg {
+    font-size: 20px;
+}
+
+.sozial_bar path {
+    fill: white;
+}
+
+.newsletter {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-image: linear-gradient(to right, rgb(49 50 104), rgb(184 9 34));
+    margin-bottom: 5em;
+    padding: 5em 1em;
+    color: white;
+}
+
+.invisible {
+    display: none;
+}
+
+.newsletter h3 {
+    font-size: 45px;
+    font-weight: 100;
+    margin: .75em 0;
+    letter-spacing: 4px;
+}
+
+.newsletter input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 50%;
+    border-bottom: 1px solid white;
+    margin-right: 2em;
+    padding-bottom: .5em;
+}
+
+.newsletter input::placeholder {
+    color: white;
+}
+
+.submit {
+    background: none;
+    box-shadow: none;
+    border: 1px solid white;
+    border-radius: 22px;
+    outline: none;
+    color: white;
+    padding: .5em 1em;
+    cursor: pointer;
+}

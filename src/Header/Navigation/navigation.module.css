@@ -1,0 +1,24 @@
+.App_navigation {
+    background-color: #2F376B;
+    padding: .5em;
+    margin: 0 -.5em;
+}
+
+.inside {
+    max-width: 1620px;
+    margin: auto;
+}
+
+.App_navigation a {
+    color: white;
+}
+
+.level_1 {
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.level_1 > li {
+    padding: 0 .25em;
+}
