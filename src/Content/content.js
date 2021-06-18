@@ -4,7 +4,7 @@ import Feedback from './Feedback/feedback';
 import Frame from './Frame/frame';
 import Shop from './Shop/shop';
 
-const Body = (props) => {
+const Conent = (props) => {
   return (
 
       <div className={style.app_body}>
@@ -19,4 +19,4 @@ const Body = (props) => {
   );
 }
 
-export default Body;
+export default Conent;

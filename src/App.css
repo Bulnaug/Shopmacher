@@ -3,18 +3,17 @@
  }
 
  h2 {
+  font: 400 32px 'DM Sans';
   color: #2F376B;
   text-align: center;
-  font-weight: normal;
-  font-size: 32px;
-  font-family: DM Sans, sans-serif;
-  font-weight: normal;
+  margin-bottom: 24px;
  }
  
  ul, li {
    padding: 0;
    margin: 0
  }
+ 
  ul {
    list-style-type: none;
  }

@@ -1,5 +1,5 @@
 import Header from './Header/header'
-import Body from './Content/body';
+import Conent from './Content/content';
 import Footer from './Footer/footer'
 import './App.css';
 
@@ -8,7 +8,7 @@ const App = (props) => {
 
       <div className="App">
         <Header />
-        <Body />
+        <Conent />
         {/* <Content products={props.state.Products}/> */}
         <Footer />
       </div>

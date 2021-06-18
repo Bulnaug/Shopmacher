@@ -1,41 +1,112 @@
+.subHeader {
+    font: 400 18px 'Helvetica';
+    color: #505050;
+    text-align: center;
+    margin: 20px 0;
+}
+
 .filterButtons {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
     grid-gap: 2em;
 }
 
-.filterButtons > div {
+.filterButtons > div:not(.show_all) {
     display: flex;
     justify-content: space-between;
     background-color: #F4F4F4;
-    color: #2F376B;
-    padding: 0 .5em;
-    transition: .3s;
+    height: 19px;
+    padding: 14px 16px 15px;
     cursor: pointer;
-    font-size: 16px;
+    border-radius: 4px;
+    transition: .3s;
 }
 
-.filterButtons > div:hover {
+.filterButtons > div:not(.show_all):hover, 
+.filterButtons div.active {
     background-color: #2F376B;
-    color: white;
 }
 
 .filterButtons p {
-    margin: .5em 0;
+    margin: 0;
 }
 
-.filterButtons p:last-child {
-    color: black;
+.title {
+    font: 500 16px 'DM Sans';
+    color: #2F376B;
 }
 
-.filterButtons > div:hover p:last-child {
+.count {
+    font: 400 14px 'Helvetica';
+    color: #505050;
+}
+
+.filterButtons > div:not(.show_all):hover p, 
+.filterButtons .active p {
     color: white;
 }
 
-.filterButtons p:last-child:before {
+.filterButtons .count:before {
     content: '(';
 }
 
-.filterButtons p:last-child:after {
+.filterButtons .count:after {
     content: ')';
+}
+
+.show_all {
+    height: 21px;
+    padding: 14px 16px 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.show_all p {
+    display: inline-block;
+    font: 500 16px 'DM Sans';
+    color: #2F376B;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+.show_all:after {
+    content: "\006c";
+    font-family: ofp icons;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: text-bottom;
+    color: #2F376B;
+}
+
+@media (max-width: 414px) {
+    .subHeader {
+        font: 500 16px/21px 'DM Sans';
+        background-color: #2F376B;
+        color: white;
+        padding: 14px 0 13px 0;
+        border-radius: 24px;
+        margin: 24px 20px;
+    }
+
+    .subHeader:before {
+        content: "\0032";
+        font-family: ofp icons;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        margin-right: 16px;
+        font-size: 20px;
+        vertical-align: text-bottom;
+    }
+
+    .filterButtons {
+        display: none;
+    }
 }

@@ -1,5 +1,5 @@
 import Filter from './Filter/filter';
-import Artikeln from './Artikeln/artikeln';
+import Articles from './Articles/articles';
 import style from './shop.module.css'
 
 const Shop = (props) => {
@@ -9,7 +9,7 @@ const Shop = (props) => {
         <div className={style.inside}>
           <h2>Die neusten Artikel</h2>
           <Filter />
-          <Artikeln />
+          <Articles />
         </div>
       </div>
 

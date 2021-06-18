@@ -1,15 +1,17 @@
-import style from './artikeln.module.css'
+import style from './articles.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 
-const Artikeln = (props) => {
+const Articles = (props) => {
   return (
 
       <div className={style.shop}>
-        <div className={style.artikeln}>
+        <div className={style.articles}>
           <div className={style.container}>
             <div className={style.header}></div>
             <div className={style.wrapper}>
               <div className={style.info}>
-                <p>04.03.21</p><p>12 Kommentare</p><p>25</p>
+                <p>04.03.21</p><p>12 Kommentare</p><p><FontAwesomeIcon icon={faThumbsUp} /> 25</p>
               </div>
               <div className={style.desc}>
                 <p>Welches Druckpapier für welchen Zweck?</p>
@@ -23,7 +25,7 @@ const Artikeln = (props) => {
             <div className={style.header}></div>
             <div className={style.wrapper}>
               <div className={style.info}>
-                <p>04.03.21</p><p>12 Kommentare</p><p>25</p>
+                <p>04.03.21</p><p>12 Kommentare</p><p><FontAwesomeIcon icon={faThumbsUp} /> 25</p>
               </div>
               <div className={style.desc}>
                 <p>Welches Druckpapier für welchen Zweck?</p>
@@ -37,7 +39,7 @@ const Artikeln = (props) => {
             <div className={style.header}></div>
             <div className={style.wrapper}>
               <div className={style.info}>
-                <p>04.03.21</p><p>12 Kommentare</p><p>25</p>
+                <p>04.03.21</p><p>12 Kommentare</p><p><FontAwesomeIcon icon={faThumbsUp} /> 25</p>
               </div>
               <div className={style.desc}>
                 <p>Welches Druckpapier für welchen Zweck?</p>
@@ -51,7 +53,7 @@ const Artikeln = (props) => {
             <div className={style.header}></div>
             <div className={style.wrapper}>
               <div className={style.info}>
-                <p>04.03.21</p><p>12 Kommentare</p><p>25</p>
+                <p>04.03.21</p><p>12 Kommentare</p><p><FontAwesomeIcon icon={faThumbsUp} /> 25</p>
               </div>
               <div className={style.desc}>
                 <p>Welches Druckpapier für welchen Zweck?</p>
@@ -65,7 +67,7 @@ const Artikeln = (props) => {
             <div className={style.header}></div>
             <div className={style.wrapper}>
               <div className={style.info}>
-                <p>04.03.21</p><p>12 Kommentare</p><p>25</p>
+                <p>04.03.21</p><p>12 Kommentare</p><p><FontAwesomeIcon icon={faThumbsUp} /> 25</p>
               </div>
               <div className={style.desc}>
                 <p>Welches Druckpapier für welchen Zweck?</p>
@@ -79,7 +81,7 @@ const Artikeln = (props) => {
             <div className={style.header}></div>
             <div className={style.wrapper}>
               <div className={style.info}>
-                <p>04.03.21</p><p>12 Kommentare</p><p>25</p>
+                <p>04.03.21</p><p>12 Kommentare</p><p><FontAwesomeIcon icon={faThumbsUp} /> 25</p>
               </div>
               <div className={style.desc}>
                 <p>Welches Druckpapier für welchen Zweck?</p>
@@ -93,7 +95,7 @@ const Artikeln = (props) => {
             <div className={style.header}></div>
             <div className={style.wrapper}>
               <div className={style.info}>
-                <p>04.03.21</p><p>12 Kommentare</p><p>25</p>
+                <p>04.03.21</p><p>12 Kommentare</p><p><FontAwesomeIcon icon={faThumbsUp} /> 25</p>
               </div>
               <div className={style.desc}>
                 <p>Welches Druckpapier für welchen Zweck?</p>
@@ -107,7 +109,7 @@ const Artikeln = (props) => {
             <div className={style.header}></div>
             <div className={style.wrapper}>
               <div className={style.info}>
-                <p>04.03.21</p><p>12 Kommentare</p><p>25</p>
+                <p>04.03.21</p><p>12 Kommentare</p><p><FontAwesomeIcon icon={faThumbsUp} /> 25</p>
               </div>
               <div className={style.desc}>
                 <p>Welches Druckpapier für welchen Zweck?</p>
@@ -121,7 +123,7 @@ const Artikeln = (props) => {
             <div className={style.header}></div>
             <div className={style.wrapper}>
               <div className={style.info}>
-                <p>04.03.21</p><p>12 Kommentare</p><p>25</p>
+                <p>04.03.21</p><p>12 Kommentare</p><p><FontAwesomeIcon icon={faThumbsUp} /> 25</p>
               </div>
               <div className={style.desc}>
                 <p>Welches Druckpapier für welchen Zweck?</p>
@@ -135,7 +137,7 @@ const Artikeln = (props) => {
             <div className={style.header}></div>
             <div className={style.wrapper}>
               <div className={style.info}>
-                <p>04.03.21</p><p>12 Kommentare</p><p>25</p>
+                <p>04.03.21</p><p>12 Kommentare</p><p><FontAwesomeIcon icon={faThumbsUp} /> 25</p>
               </div>
               <div className={style.desc}>
                 <p>Welches Druckpapier für welchen Zweck?</p>
@@ -149,7 +151,7 @@ const Artikeln = (props) => {
             <div className={style.header}></div>
             <div className={style.wrapper}>
               <div className={style.info}>
-                <p>04.03.21</p><p>12 Kommentare</p><p>25</p>
+                <p>04.03.21</p><p>12 Kommentare</p><p><FontAwesomeIcon icon={faThumbsUp} /> 25</p>
               </div>
               <div className={style.desc}>
                 <p>Welches Druckpapier für welchen Zweck?</p>
@@ -163,7 +165,7 @@ const Artikeln = (props) => {
             <div className={style.header}></div>
             <div className={style.wrapper}>
               <div className={style.info}>
-                <p>04.03.21</p><p>12 Kommentare</p><p>25</p>
+                <p>04.03.21</p><p>12 Kommentare</p><p><FontAwesomeIcon icon={faThumbsUp} /> 25</p>
               </div>
               <div className={style.desc}>
                 <p>Welches Druckpapier für welchen Zweck?</p>
@@ -175,13 +177,13 @@ const Artikeln = (props) => {
           </div>
         </div>
         <div className={style.pagination}>
-          <p classname={style.vor}>Vorherige Seite</p>
-          <p classname={style.mitte}>10 Beiträge von 124</p>
-          <p classname={style.nach}>Nächste Seite</p>
+          <p className={style.prev}>Vorherige Seite</p>
+          <p className={style.page_counter}>10 Beiträge von 124</p>
+          <p className={style.next}>Nächste Seite</p>
         </div>
       </div>
 
   );
 }
 
-export default Artikeln;
+export default Articles;

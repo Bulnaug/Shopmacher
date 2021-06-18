@@ -17,7 +17,7 @@ const HeaderBody = () => {
             <form action="" method="get">
               <div className={style.searchbody}>
         
-                <label for="search" className={style.invisible}>Search</label>
+                <label htmlFor="search" className={style.invisible}>Search</label>
                 <input type="search" name="keywords" id="search" value="" placeholder='Suchbegriff eingeben'/><FontAwesomeIcon icon={faSearch} />
               </div>
             </form>
