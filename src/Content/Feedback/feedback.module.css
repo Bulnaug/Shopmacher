@@ -1,4 +1,5 @@
 .feedback {
+    position: relative;
     margin: 3em 0;
 }
 
@@ -7,40 +8,117 @@
     margin: auto;
 }
 
-.feedback > div > div {
+.container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2em;
+    grid-template-columns: repeat(4, minmax(351px, 1fr));
+    grid-gap: 24px;
+    margin: 0 72px;
+    overflow: auto;
+    background: white;
+    padding-bottom: 20px;
 }
 
-.feedbackContainer {
+.container:before, 
+.container:after {
+    font-family: ofp icons;
+    font-style: normal;
+    font-weight: 400;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    font-size: 22px;
+    height: 22px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 12px;
+    border: 1px solid #2F376B;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.container:before {
+    content: "\004d";
+    left: 0;
+}
+
+.container:after {
+    content: '\004e';
+    right: 0;
+}
+
+
+.item {
     background-color: #f3f4f5;
 }
 
-.header, .wrapper {
-    padding: 0 .5em;
+.wrapper {
+    padding: 30px 16px;
 }
 
 .header {
-    height: 3em;
-    background-color: #2F376B;
-    color: white;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    font-size: 24px;
+    padding: 20px 16px;   
 }
 
-.wrapper {
-    color: #2F376B;
-    margin: 1em 0;
-    font-size: 20px;
+.header {
+    font: 400 24px 'Helvetica';
+    background-color: #2F376B;
+    color: white;
+    border-radius: 4px 4px 0 0;
 }
 
 .wrapper > p {
+    font: 400 14px/22px 'Helvetica';
     color: #505050;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.571;
     margin: 0;
+}
+
+.wrapper > div {
+    font: 400 20px 'Helvetica';
+    color: #2F376B;
+    margin: 5px 0 0;
+}
+
+.header:before {
+    font-family: ofp icons;
+    font-style: normal;
+    font-weight: 400;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 16px;
+    font-size: 40px;
+    vertical-align: text-bottom;
+}
+
+.header[data-icon='gaming']:before {
+    content: "\0068";
+}
+
+.header[data-icon='printer']:before {
+    content: "\0049";
+}
+
+.header[data-icon='tech']:before {
+    content: "\002a";
+}
+
+.header[data-icon='knowing']:before {
+    content: "\0068";
+}
+
+@media (max-width:30em) {
+    .container {
+        margin: 0;
+    }
+
+    .container:before, 
+    .container:after {
+    display: none;
+    }
 }

@@ -91,10 +91,16 @@
 }
 
 .prev, 
-.next {
+.next,
+.next_mobile {
     font: 400 16px/19px 'DM Sans';
     cursor: pointer;
     padding: 12px 19px 13px 20px;
+}
+
+.next_mobile {
+    display: none;
+    width: 100%;
 }
 
 .prev {
@@ -107,7 +113,8 @@
     color: #505050;
 }
 
-.next {
+.next,
+.next_mobile {
     color: white;
     background-color: #2F376B;
 }
@@ -119,5 +126,15 @@
 
     .articles {
         margin-top: 24px;
+    }
+
+    .next_mobile {
+        display: block;
+    }
+
+    .prev, 
+    .next,
+    .page_counter {
+        display: none;
     }
 }

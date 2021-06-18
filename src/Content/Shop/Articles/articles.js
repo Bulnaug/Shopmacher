@@ -180,6 +180,7 @@ const Articles = (props) => {
           <p className={style.prev}>Vorherige Seite</p>
           <p className={style.page_counter}>10 Beiträge von 124</p>
           <p className={style.next}>Nächste Seite</p>
+          <p className={style.next_mobile}>Weitere Beiträge laden</p>
         </div>
       </div>
 
