@@ -16,13 +16,45 @@
     text-align: center;
 }
 
+.sub_nav span[data-icon='service']:before {
+    content: '\0054';
+}
+
+.sub_nav span[data-icon='customers']:before {
+    content:'\0052';
+}
+
+.sub_nav span[data-icon='heart']:before {
+    content: '\0056';
+}
+
+.sub_nav span[data-icon='account']:before {
+    content:'\0053';
+}
+
+.sub_nav span[data-icon='cart']:before {
+    content:'\0057';
+}
+
+.sub_nav span:before {
+    font-family: ofp icons;
+    font-style: normal;
+    font-weight: 400;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    font-size: 30px;
+}
+
 .inside {
     display: grid;
     grid-template-columns: 17% auto 30em;
     grid-gap: 3em;
     padding: 1em 0;
     height: 3em;
-    align-items: end;
+    align-items: center;
 }
 
 .searchbody {
@@ -59,4 +91,19 @@
 
 .invisible {
     display: none;
+}
+
+@media (max-width: 1100px) {
+    .inside {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .searchbody {
+        display: none;
+    }
+
+    .sub_nav li:not(:first-child) {
+        display: none;
+    }
 }

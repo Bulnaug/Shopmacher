@@ -22,3 +22,9 @@
 .topbar a {
     color: #505050;
 }
+
+@media (max-width: 1100px) { 
+    .topbar {
+        display: none;
+    }
+}
